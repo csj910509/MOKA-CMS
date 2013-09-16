@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using MokaCms.Services;
 using NUnit.Framework;
 
+<<<<<<< HEAD
 
 namespace MokaCms.Web.UI.Tests
 {
@@ -41,4 +42,38 @@ namespace MokaCms.Web.UI.Tests
     }
 
          
+=======
+namespace MokaCms.Web.UI.Tests
+{
+	[TestFixture]
+	public class AccountServiceTest
+	{
+		#region SetUp / TearDown
+
+		[SetUp]
+		public void Init()
+		{ }
+
+		[TearDown]
+		public void Dispose()
+		{ }
+
+		#endregion
+
+		#region Tests
+
+		[Test]
+		[TestCase("robin", "robin", true)]
+		[TestCase("patrick", "hayley", false)]
+		public void Login_GivenUsernamePassword_LoginConfirmed(string username, string password, bool result)
+		{
+			var account = new AccountService();
+			var authenticated = account.Authenticate(username, password);
+
+			Assert.AreEqual(result, authenticated);
+		}
+
+		#endregion
+	}
+>>>>>>> dev
 }

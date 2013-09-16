@@ -120,6 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountServiceTest.cs" />
     <Compile Include="HomeControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AccountServiceTest.cs" />
@@ -131,8 +132,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\AccountService\MokaCms.Services.csproj">
       <Project>{515e57ea-3681-453f-9429-4673043203dc}</Project>
+=======
+    <ProjectReference Include="..\MokaCms.Services\MokaCms.Services.csproj">
+      <Project>{872a2d20-e89a-4841-93d3-d15f6d3fc2a1}</Project>
+>>>>>>> dev
       <Name>MokaCms.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\MokaCms.Web.UI\MokaCms.Web.UI.csproj">
